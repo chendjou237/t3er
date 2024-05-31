@@ -9,7 +9,7 @@ export const dynamic = "force-dynamic";
 async function Images(){
  const images = await getMyImages();
   return (<div className="flex flex-wrap gap-4">
-  {images.map((image: unknown) => (<div key={image.id} className="w-48 flex flex-col  h-48 justify-center">
+  {images.map((image) => (<div key={image.id} className="w-48 flex flex-col  h-48 justify-center">
     <Link href={`/photos/${image.id}`}>
     <Image src={image.url} style={{ objectFit: "contain" }} width={192} height={192}  alt={image.name}   />
     </Link>
