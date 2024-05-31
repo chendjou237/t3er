@@ -10,7 +10,7 @@ import {
 } from '@clerk/nextjs'
 import TopNav from "./_components/topnav";
 import { ourFileRouter } from "./api/uploadthing/core";
-import { Toaster } from "~/components/ui/toaster";
+import { Toaster } from "~/components/ui/sonner";
 
 export const metadata = {
   title: "Chen Gallery",
