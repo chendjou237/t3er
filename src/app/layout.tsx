@@ -10,6 +10,7 @@ import {
 } from '@clerk/nextjs'
 import TopNav from "./_components/topnav";
 import { ourFileRouter } from "./api/uploadthing/core";
+import { Toaster } from "~/components/ui/toaster";
 
 export const metadata = {
   title: "Chen Gallery",
@@ -30,7 +31,7 @@ export default function RootLayout({
 
     <html lang="en" className={`${GeistSans.variable}`}>
 
-      <body className="font-sans">
+      <body className="font-sans dark">
       <div className="h-screen grid grid-rows-[auto,1fr]">
 
       
@@ -48,6 +49,8 @@ export default function RootLayout({
         {children}
         </main>
         </div>
+        <Toaster />
+
         {modal}
         <div id="modal-root" />
         </body>
